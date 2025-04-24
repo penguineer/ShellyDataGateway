@@ -13,6 +13,13 @@ various sinks (currently, MQTT is supported).
 - Converts data into Cloud Events format.
 - Supports forwarding to MQTT sinks.
 
+## Configuration
+
+The following environment variables are expected:
+
+* `LOG_LEVEL` Log level for the application. Possible values are `debug`, `info`, `warning`, `error`, `critical`, `notset`. Defaults to `info`.
+* `MQTT_HOST` Name of the MQTT host
+
 ## Running
 
 With the configuration stored in a file `.env`, the tool can be started
